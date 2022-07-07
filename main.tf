@@ -14,7 +14,7 @@ resource "vault_aws_secret_backend_role" "role" {
   backend = vault_aws_secret_backend.aws.path
   name    = "test2"
   credential_type = "iam_user"
-  policy_arns = arn:aws:iam::aws:policy/AdministratorAccess
+  policy_arns = [arn:aws:iam::aws:policy/AdministratorAccess]
 
   policy_document = <<EOT
 {
