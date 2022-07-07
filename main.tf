@@ -7,7 +7,7 @@ provider vault{
 resource "vault_aws_secret_backend" "aws" {
   access_key = "AKIAWCLFHFHVL5JXIBGC"
   secret_key = "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"
-  path = "awsvaulpocwqq"
+  path = "awsvaulpocnew1"
 }
 
 resource "vault_aws_secret_backend_role" "role" {
@@ -17,14 +17,14 @@ resource "vault_aws_secret_backend_role" "role" {
 
   policy_document = <<EOT
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "*",
-      "Resource": "*"
-    }
-  ]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        }
+    ]
 }
 EOT
 }
