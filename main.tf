@@ -33,8 +33,8 @@ resource "vault_aws_secret_backend_role" "role" {
         "iam:RemoveUserFromGroup"
       ],
       "Resource": [
-        "arn:aws:iam::ACCOUNT-ID-WITHOUT-HYPHENS:user/vault-root-*",
-        "arn:aws:iam::ACCOUNT-ID-WITHOUT-HYPHENS:user/root-for-vault"
+        "arn:aws:iam::417360980458:user/vault-root-*",
+        "arn:aws:iam::417360980458:user/root-for-vault"
       ]
     },
     {
@@ -47,7 +47,7 @@ resource "vault_aws_secret_backend_role" "role" {
         "iam:PutUserPolicy"
       ],
       "Resource": [
-        "arn:aws:iam::${AWS_ACCOUNT_ID}:user/vault-root-*"
+        "arn:aws:iam::417360980458:user/vault-root-*"
       ],
       "Condition": {
         "StringEquals": {
