@@ -52,7 +52,7 @@ resource "vault_aws_secret_backend_role" "role" {
       "Condition": {
         "StringEquals": {
           "iam:PermissionsBoundary": [
-            "arn:aws:iam::ACCOUNT-ID-WITHOUT-HYPHENS:policy/vault-aws-permission-boundary"
+            "arn:aws:iam::417360980458:policy/vault-aws-permission-boundary"
           ]
         }
       }
