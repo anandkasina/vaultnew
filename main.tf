@@ -5,9 +5,9 @@ provider vault{
 }
 
 resource "vault_aws_secret_backend" "aws" {
-  access_key = "AKIAWCLFHFHVOSEW236W"
+  access_key = "AKIAWCLFHFHVL5JXIBGC"
   secret_key = "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"
-  path = "awsvaulpocww"
+  path = "awsvaulpocwqq"
 }
 
 resource "vault_aws_secret_backend_role" "role" {
