@@ -38,7 +38,7 @@ data "vault_aws_access_credentials" "creds" {
 provider "aws" {
   access_key = data.vault_aws_access_credentials.creds.access_key
   secret_key = data.vault_aws_access_credentials.creds.secret_key
-  region = "ap-south-1"
+  region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "bucket" {
