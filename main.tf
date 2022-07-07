@@ -5,8 +5,8 @@ provider vault{
 }
 
 resource "vault_aws_secret_backend" "aws" {
-  access_key = "AKIAWCLFHFHVB7EX5D6Q"
-  secret_key = "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"
+  access_key = "AKIAWCLFHFHVOSEW236W"
+  secret_key = "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"
   path = "awsvaulpoc1"
 }
 
@@ -38,10 +38,5 @@ data "vault_aws_access_credentials" "creds" {
 provider "aws" {
   access_key = data.vault_aws_access_credentials.creds.access_key
   secret_key = data.vault_aws_access_credentials.creds.secret_key
-  region = "ap-south-1"
 }
 
-resource "aws_s3_bucket" "bucket" {
-  bucket = "bucket-111"
-  acl    = "public-read"
-}
